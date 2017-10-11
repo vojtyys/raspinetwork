@@ -10,8 +10,8 @@ s.listen(5)
 
 while True:
     c, addr = s.accept()
-	print ('Got connection from', addr)
-	c.send('Connected to',host,'.')
-	msg = s.recv(4096)
-	print (msg)
-	s.close
+    print ('Got connection from', addr)
+    c.send('Connected to',host,'.')
+    msg = s.recv(4096)
+    print (msg)
+    s.close
