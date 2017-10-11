@@ -4,7 +4,7 @@ import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 port = 12345
-host = socket.gethostname();
+host = '192.168.0.200' 
 
 s.connect((host, port))
 print ('client: connected')
