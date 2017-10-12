@@ -16,4 +16,4 @@ while True:
     print ('Server: '+msg)
     c.send(msg.encode())
     s.close
-    print('Server: Connection to ' + addr + ' has been closed.')
+    print('Server: Connection to ', addr, ' has been closed.')
