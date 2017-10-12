@@ -7,7 +7,7 @@ port = 12345
 host = '89.177.139.187' 
 
 s.connect((host, port))
-print ('client: connected')
+print ('client: connection has been established')
 print ('client: '+s.recv(4096).decode()) 
 msg = input('Client: Enter a message: ')
 s.send(msg.encode())
