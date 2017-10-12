@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# raspinetwork (C) 2017 Vojtech Pail https://github.com/vojtyys/raspinetwork/blob/master/LICENSE
 
 import socket
 
