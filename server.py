@@ -10,7 +10,7 @@ s.listen(5)
 
 while True:
     c, addr = s.accept()
-    print ('Server: Got connection from', addr)
+    print ('Server: Got connection from', socket.gethostname())
     c.send(('Connected to '+host+'.').encode())
     msg = c.recv(4096).decode();
     print ('Server: '+msg)
