@@ -14,4 +14,6 @@ while True:
     c.send(('Connected to '+socket.gethostname()+'.').encode())
     msg = c.recv(4096).decode();
     print ('Server: '+msg)
+    c.send(msg.encode())
     s.close
+    print('Server: Connection to ' + addr + ' has been closed.')
