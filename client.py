@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# raspinetwork (C) 2017 Vojtech Pail https://github.com/vojtyys/raspinetwork/blob/master/LICENSE
 
 import socket
 
@@ -7,8 +8,10 @@ port = 12345
 host = '89.177.139.187' 
 
 s.connect((host, port))
-print ('client: connection has been established')
-print ('client: '+s.recv(4096).decode()) 
+print ('Client: connection has been established')
+print ('Client: '+s.recv(4096).decode()) 
 msg = input('Client: Enter a message: ')
 s.send(msg.encode())
+print(s.recv(4096).decode())
 s.close()
+print ('Client: connection to server has been closed.')
